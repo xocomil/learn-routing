@@ -5,10 +5,7 @@ export const COMPONENT_ROUTES: Route[] = [
   {
     path: 'component-one',
 
-    loadComponent: () =>
-      import('../component-one/component-one.component').then(
-        (component) => component.ComponentOneComponent
-      ),
+    loadComponent: () => import('../component-one/component-one.component'),
     loadChildren: () =>
       defer(() => import('../component-one/component-one.routes')).pipe(
         map((routes) => routes.COMPONENT_ONE_ROUTES),

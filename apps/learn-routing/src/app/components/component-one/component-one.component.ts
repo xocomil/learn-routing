@@ -20,3 +20,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ComponentOneComponent {}
+
+export default ComponentOneComponent;
